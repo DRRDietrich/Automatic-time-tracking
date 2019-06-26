@@ -1,1 +1,2 @@
-# Automatic-time-tracking
+# Automatic Time Tracking
+
