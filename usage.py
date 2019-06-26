@@ -87,7 +87,7 @@ while True:
     time.sleep(period)
     frpid = get(["xdotool", "getactivewindow", "getwindowpid"])
     frname = get(["xdotool", "getactivewindow", "getwindowname"])
-    app = get(["ps", "-p", frpid, "-o", "comm="]) if frpid != None else "Unknown"
+    app = get(["ps", "-p", frpid, "-o", "comm="]) if frpid != None else "IDLE"
 
     workspace = int(get(["xdotool", "get_desktop"]))
 
