@@ -1,12 +1,20 @@
 # Automatic Time Tracking
 
+### Start Time Tracking
 ```bash
 #!/bin/bash
 nohup python3 usage.py >/dev/null 2>&1 &
 ```
 
+### Show Statistics
 ```bash
-cat .usagelogs/YYYY_MM_DD_HH_MM_SS.txt 
+#!/bin/bash
+cat .usagelogs/YYYY_MM_DD_HH_MM_SS.txt
+```
+
+#### Output
+Statistics about the 6 workspaces (Project 1 to 6) and active programs. Values in HH:MM:SS and percent.
+```bash
 Project_1: 0:08:08
 Project_2: 0:00:06
 Project_3: 0:00:00
