@@ -2,6 +2,10 @@
 
 Time tracking for Gnome.
 
+### Dependencies
+
+yum -y install xdotool
+
 ### Start Time Tracking
 ```bash
 #!/bin/bash
