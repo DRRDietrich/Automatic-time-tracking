@@ -11,7 +11,8 @@ order = "up"
 
 # don change anything below
 home = os.environ["HOME"]
-logdir = home+"/.usagelogs"
+logdir = home+"/Zeiterfassung"
+device = "Fedora"
 
 def currtime(tformat=None):
     return time.strftime("%Y_%m_%d_%H_%M_%S") if tformat == "file"\
@@ -23,7 +24,7 @@ except FileExistsError:
     pass
 
 # path to your logfile
-log = logdir+"/"+currtime("file")+".txt"; startt = currtime()
+log = logdir+"/"+device+"-"+currtime("file")+".txt"; startt = currtime()
 
 def get(command):
     try:
