@@ -1,5 +1,7 @@
 # Automatic Time Tracking
 
+Time tracking for Gnome.
+
 ### Start Time Tracking
 ```bash
 #!/bin/bash
