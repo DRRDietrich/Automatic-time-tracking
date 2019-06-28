@@ -6,6 +6,24 @@ Time tracking for Gnome.
 
 yum -y install xdotool
 
+### Useful adjustments
+
+- „GNOME Tweak Tool“ => Workspaces => Static Workspaces
+
+- GNOME Shell Extension „Workspace Indicator“
+
+.local/share/gnome-shell/extensions/workspace-indicator@gnome-shell-extensions.gcampax.github.com/extension.js
+```
+_labelText(workspaceIndex) {
+        if (workspaceIndex == undefined) {
+            workspaceIndex = this._currentWorkspace;
++++         return Meta.prefs_get_workspace_name(workspaceIndex);
+            return (workspaceIndex + 1).toString();
+        }
+        return Meta.prefs_get_workspace_name(workspaceIndex);
+    }
+```
+
 ### Start Time Tracking
 ```bash
 #!/bin/bash
